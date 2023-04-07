@@ -1,32 +1,31 @@
-# Título do Projeto
+# AutoLeed
 
-Breve descrição do projeto.
+Script de automação que utiliza a API do Google Maps para buscar locais próximos a uma determinada coordenada geográfica (latitude e longitude) com base em uma palavra-chave específica (neste caso, "despachante"). Ele extrai informações relevantes de cada local encontrado (nome e telefone) e armazena essas informações em um arquivo de planilha do Excel. Essa ferramenta pode ser útil para quem precisa coletar informações de estabelecimentos em uma determinada área, como por exemplo para fins de pesquisa de mercado.
 
 ## Funcionalidades
 
-- Funcionalidade 1
-- Funcionalidade 2
-- Funcionalidade 3
+- O sistema de automação busca credenciais de estabelecimentos em uma área geográfica especificada pelo usuário;
 
 ## Tecnologias Utilizadas
 
-- Tecnologia 1
-- Tecnologia 2
-- Tecnologia 3
+- Python 3.9
+- Google Maps API
 
 ## Instalação
 
 1. Clone o repositório:
 
-git clone https://github.com/usuario/nome-do-repositorio.git
+git clone https://github.com/Nicro01/AutoLeed.git
 
 2. Instale as dependências necessárias:
 
-npm install
+pip install pandas
+
+pip install googlemaps
 
 3. Execute o projeto:
 
-npm start
+python autoleed.py
 
 
 ## Contribuição
