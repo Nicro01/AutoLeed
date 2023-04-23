@@ -1,37 +1,52 @@
+
 # AutoLeed
 
-Script de automação que utiliza a API do Google Maps para buscar locais próximos a uma determinada coordenada geográfica (latitude e longitude) com base em uma palavra-chave específica (neste caso, "despachante"). Ele extrai informações relevantes de cada local encontrado (nome e telefone) e armazena essas informações em um arquivo de planilha do Excel. Essa ferramenta pode ser útil para quem precisa coletar informações de estabelecimentos em uma determinada área, como por exemplo para fins de pesquisa de mercado.
+Este é um projeto que utiliza as bibliotecas telebot e googlemaps para permitir que os usuários pesquisem locais próximos a uma determinada localização. O bot solicita ao usuário a cidade desejada, o raio de pesquisa e o segmento que está sendo procurado. Ele então usa a API do Google Maps para encontrar locais próximos a essa localização e cria um arquivo CSV com as informações encontradas. O arquivo é então enviado de volta ao usuário através do chatbot.
 
-## Funcionalidades
 
-- O sistema de automação busca credenciais de estabelecimentos em uma área geográfica especificada pelo usuário;
+## 🔗 Link para o bot
+[![telegram](https://img.shields.io/badge/telegram-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://t.me/AutoLeed_Bot)
 
 ## Tecnologias Utilizadas
-
 - Python 3.9
-- Google Maps API
+- API Places do Google Maps
+- Telebot
+- Pandas
+- Time
+- Os
+## Documentação do BOT
 
-## Instalação
+#### Comandos
 
-1. Clone o repositório:
+```http
+  /leeds
+```
 
-git clone https://github.com/Nicro01/AutoLeed.git
+#### Retorno do bot com as pergutas :
 
-2. Instale as dependências necessárias:
+```http
+  Qual cidade você está procurando?
+  Qual raio em metros você deseja procurar?
+  Qual segmento você está procurando?
+  Qual o nome que você gostaria de dar ao arquivo?
+```
 
-pip install pandas
+#### Responda separadamente com esses parâmetros :
 
-pip install googlemaps
-
-3. Execute o projeto:
-
-python autoleed.py
+| Parâmetro   | Tipo       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `Cidade` | `string` | **Obrigatório**. Cidade que queira localizar |
 
 
-## Contribuição
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `Raio`      | `int` | **Obrigatório**. O Raio da pesquisa que você quer |
 
-Se você deseja contribuir com este projeto, sinta-se à vontade para criar uma `pull request`. Será um prazer ter sua ajuda no desenvolvimento do projeto.
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `Segmento`      | `string` | **Obrigatório**. O Segmento da pesquisa que você quer |
 
-## Licença
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `NomeDoArquivo`      | `string` | **Obrigatório**. O nome do arquivo que você quer |
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
