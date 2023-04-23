@@ -18,13 +18,13 @@ Este é um projeto que utiliza as bibliotecas telebot e googlemaps para permitir
 
 #### Comandos
 
-```http
+```
   /leeds
 ```
 
 #### Retorno do bot com as pergutas :
 
-```http
+```
   Qual cidade você está procurando?
   Qual raio em metros você deseja procurar?
   Qual segmento você está procurando?
