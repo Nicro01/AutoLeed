@@ -4,10 +4,10 @@ import pandas as pd
 import time
 import os
 
-TOKEN = '5919072994:AAGXLVLLUD3w3LSkLidAd0f3FG_1GFJgP7I'
+TOKEN = ''
 bot = telebot.TeleBot(TOKEN)
 
-API_KEY = 'AIzaSyAPrgi37uuZ2-EYmQ9U6Nsa4dZmSeKpbxU'
+API_KEY = ''
 gmaps = googlemaps.Client(key=API_KEY)
 
 listas_feitas = []
